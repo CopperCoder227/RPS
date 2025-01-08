@@ -1,29 +1,17 @@
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 html {
   height: 100%;
   width: 100%;
 }
 
 body {
-background: url(imgs/elmo.jpg);
+background: url(imgs/backgound.png);
 background-size: cover;
 text-align: center;
 color: rgb(255, 255, 255);
 text-shadow: 2px 2px 5px #ffffff;
 }
 
+/*
 .btn-fancy {
   background: rgb(255, 255, 255);
   background-image: -webkit-linear-gradient(top, #640083, #000000);
@@ -48,10 +36,4 @@ text-shadow: 2px 2px 5px #ffffff;
   background-image: -o-linear-gradient(top, #830067, #090083);
   background-image: linear-gradient(to bottom, #830067, #090083);
   text-decoration: none;
-}
-
-
-.dont{
-  height: 400px;
-  width: 600px;
 }
