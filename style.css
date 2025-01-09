@@ -18,13 +18,34 @@ text-shadow: 2px 2px 5px #ffffff;
   margin-right: 400px;
 }
 
+.btn{
+  background-color: yellow;
+}
+
 .hand{
   height: 300px;
   width: 300px;  
   margin-left: 400px;
   margin-right: 25px;
 }
-/*
+
+.btn-card1:hover{
+  border-radius: 6px;
+  background-color: #f24646b2;
+    mix-blend-mode: add;
+}
+
+.btn-card2:hover{
+  text-shadow: 2px 2px 5px #ffffff;
+
+}
+
+.btn-card3:hover{
+  text-shadow: 2px 2px 5px #ffffff;
+
+}
+
+
 .btn-fancy {
   background: rgb(255, 255, 255);
   background-image: -webkit-linear-gradient(top, #640083, #000000);
