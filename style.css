@@ -11,6 +11,19 @@ color: rgb(255, 255, 255);
 text-shadow: 2px 2px 5px #ffffff;
 }
 
+.mario{
+  height: 300px;
+  width: 300px;
+  margin-left: 25px;
+  margin-right: 400px;
+}
+
+.hand{
+  height: 300px;
+  width: 300px;  
+  margin-left: 400px;
+  margin-right: 25px;
+}
 /*
 .btn-fancy {
   background: rgb(255, 255, 255);
