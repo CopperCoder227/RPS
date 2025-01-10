@@ -14,8 +14,6 @@ text-shadow: 2px 2px 5px #ffffff;
 .mario{
   height: 300px;
   width: 300px;
-  margin-left: 25px;
-  margin-right: 400px;
 }
 
 .btn{
@@ -25,24 +23,47 @@ text-shadow: 2px 2px 5px #ffffff;
 .hand{
   height: 300px;
   width: 300px;  
-  margin-left: 400px;
-  margin-right: 25px;
+}
+
+.chart{
+  height: 300px;
+  width: 300px;  
+}
+
+.selectedRock {
+  border-radius: 6px;
+  background-color: #f24646b2;
+  mix-blend-mode: add;
 }
 
 .btn-card1:hover{
   border-radius: 6px;
   background-color: #f24646b2;
-    mix-blend-mode: add;
+  mix-blend-mode: add;
+}
+
+.selectedPaper {
+  border-radius: 6px;
+  background-color: #f1c755a8;
+  mix-blend-mode: add;
 }
 
 .btn-card2:hover{
-  text-shadow: 2px 2px 5px #ffffff;
+  border-radius: 6px;
+  background-color: #f1c755a8;
+  mix-blend-mode: add;
+}
 
+.selectedScissors {
+  border-radius: 6px;
+  background-color: #4ba9eca9;
+  mix-blend-mode: add;
 }
 
 .btn-card3:hover{
-  text-shadow: 2px 2px 5px #ffffff;
-
+  border-radius: 6px;
+  background-color: #4ba9eca9;
+  mix-blend-mode: add;
 }
 
 
