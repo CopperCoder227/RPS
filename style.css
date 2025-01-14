@@ -18,6 +18,8 @@ text-shadow: 2px 2px 5px #000000;
 
 .Box{
   width: 500px;
+  height: 40px;
+
 
 }
 
@@ -74,12 +76,12 @@ text-shadow: 2px 2px 5px #000000;
 
 
 .btn-fancy {
-  background: rgb(255, 255, 255);
-  background-image: -webkit-linear-gradient(top, #640083, #000000);
-  background-image: -moz-linear-gradient(top, #640083, #000000);
-  background-image: -ms-linear-gradient(top,  #640083, #000000);
-  background-image: -o-linear-gradient(top, #640083, #000000);
-  background-image: linear-gradient(to bottom, #640083, #000000);
+  background: rgb(0, 0, 0);
+  background-image: -webkit-linear-gradient(top, #f24646, #f1c755, #4ba9ec);
+  background-image: -moz-linear-gradient(top, #f24646, #f1c755, #4ba9ec);
+  background-image: -ms-linear-gradient(top,  #f24646, #f1c755, #4ba9ec);
+  background-image: -o-linear-gradient(top, #f24646, #f1c755, #4ba9ec);
+  background-image: linear-gradient(to bottom, #f24646, #f1c755, #4ba9ec);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -91,10 +93,10 @@ text-shadow: 2px 2px 5px #000000;
 
 .btn-fancy:hover {
   background: white;
-  background-image: -webkit-linear-gradient(top, #830067, #090083);
-  background-image: -moz-linear-gradient(top, #830067, #090083);
-  background-image: -ms-linear-gradient(top, #830067, #090083);
-  background-image: -o-linear-gradient(top, #830067, #090083);
-  background-image: linear-gradient(to bottom, #830067, #090083);
+  background-image: -webkit-linear-gradient(top, #b43131, #b6953c, #3b8cc5);
+  background-image: -moz-linear-gradient(top,  #b43131, #b6953c, #3b8cc5);
+  background-image: -ms-linear-gradient(top,  #b43131, #b6953c, #3b8cc5);
+  background-image: -o-linear-gradient(top,  #b43131, #b6953c, #3b8cc5);
+  background-image: linear-gradient(to bottom, #b43131, #b6953c, #3b8cc5);
   text-decoration: none;
 }
