@@ -51,7 +51,7 @@
 
         <br />
 
-        <h3>
+        <h3 id="centerText">
           Help! Mario is battling the vicious Hndaconda and needs your help!
           <br />
           Win 3 rounds of Ro-Sham-Bo in order to beat the boss!
@@ -67,7 +67,7 @@
             src="imgs/Rock.png"
             class="btn-card1"
             id="Rock"
-            onclick="playGame('rock'); rockSelect()"
+            onclick="rockSelect()"
           />
         </div>
         <div class="row">
@@ -75,7 +75,7 @@
             src="imgs/Paper.png"
             class="btn-card2"
             id="Paper"
-            onclick="playGame('paper'); paperSelect()"
+            onclick="paperSelect()"
           />
         </div>
         <div class="row">
@@ -83,7 +83,7 @@
             src="imgs/Scizors.png"
             class="btn-card3"
             id="Scissors"
-            onclick="playGame('scissors'); scissorsSelect()"
+            onclick="scissorsSelect()"
           />
         </div>
       </div>
@@ -94,7 +94,7 @@
         >
           <div class="col-12 col-sm-6 col-md-4">
             <div class="card-body">
-              <a href="_____" class="btn btn-fancy">Famous Website </a>
+              <a onclick="playGame()" class="btn btn-fancy">Choose Card</a>
             </div>
           </div>
         </div>

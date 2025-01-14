@@ -1,3 +1,5 @@
+let userChoice;
+
 function rockSelect() {
     let myElem = document.querySelector("#Rock");
     myElem.classList.add("selectedRock");
@@ -5,6 +7,7 @@ function rockSelect() {
     let otherButton2 = document.querySelector("#Scissors");
     otherButton1.classList.remove("selectedPaper");
     otherButton2.classList.remove("selectedScissors");
+    userChoice = "rock";
 }
 
 function paperSelect() {
@@ -14,6 +17,7 @@ function paperSelect() {
     let otherButton2 = document.querySelector("#Scissors");
     otherButton1.classList.remove("selectedRock");
     otherButton2.classList.remove("selectedScissors");
+    userChoice = "paper"
 }
 
 function scissorsSelect() {
@@ -23,6 +27,7 @@ function scissorsSelect() {
     let otherButton2 = document.querySelector("#Rock");
     otherButton1.classList.remove("selectedPaper");
     otherButton2.classList.remove("selectedRock");
+    userChoice = "scissors";
 }
 
 //code to make game run//
@@ -74,11 +79,11 @@ function scissorsSelect() {
     }
   };
   
-  const playGame = (userChoice) => {
+  function playGame() {
       const computerChoice = getComputerChoice();
       console.log(`You chose: ${userChoice}.`);
       console.log(`Computer chose: ${computerChoice}.`);
-     
       console.log(determineWinner(userChoice, computerChoice));
   };
-  
+
+  document.getElementById("centerText")
