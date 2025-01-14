@@ -80,10 +80,15 @@ function scissorsSelect() {
   };
   
   function playGame() {
+    if (userChoice) {
       const computerChoice = getComputerChoice();
       console.log(`You chose: ${userChoice}.`);
       console.log(`Computer chose: ${computerChoice}.`);
       console.log(determineWinner(userChoice, computerChoice));
+      document.getElementById("centerText").classList.add("d-none");
+      let columns = document.querySelectorAll("#result .row .col-4");
+      columns[0].textContent = `Mario chose: ${userChoice}.`;
+      columns[1].textContent = determineWinner(userChoice, computerChoice);
+      columns[2].textContent = `Handaconda chose: ${computerChoice}.`;
+    }
   };
-
-  document.getElementById("centerText")
