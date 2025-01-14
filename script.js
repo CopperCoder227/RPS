@@ -74,8 +74,7 @@ function scissorsSelect() {
     }
   };
   
-  const playGame = () => {
-      const userChoice = getUserChoice('paper');
+  const playGame = (userChoice) => {
       const computerChoice = getComputerChoice();
       console.log(`You chose: ${userChoice}.`);
       console.log(`Computer chose: ${computerChoice}.`);
@@ -83,4 +82,3 @@ function scissorsSelect() {
       console.log(determineWinner(userChoice, computerChoice));
   };
   
-  playGame();
