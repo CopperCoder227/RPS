@@ -48,30 +48,30 @@ const getComputerChoice = () => {
 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
-    return "The game is a tie!";
+    return "It's a draw!";
   } else if (userChoice === "rock") {
     if (computerChoice === "paper") {
       computerScore++;
-      return "Computer won.";
+      return "Handaconda attacked!";
     } else {
       userScore++;
-      return "You won!";
+      return "Mario attacked!";
     }
   } else if (userChoice === "paper") {
     if (computerChoice === "scissors") {
       computerScore++;
-      return "Computer won.";
+      return "Handaconda attacked!";
     } else {
       userScore++;
-      return "You won!";
+      return "Mario attacked!";
     }
   } else if (userChoice === "scissors") {
     if (computerChoice === "rock") {
       computerScore++;
-      return "Computer won.";
+      return "Handaconda attacked!";
     } else {
       userScore++;
-      return "You won!";
+      return "Mario attacked!";
     }
   }
 };
@@ -88,7 +88,7 @@ function playGame() {
     col12.textContent = `${determineWinner(userChoice, computerChoice)}`;
     columns[2].textContent = `Handaconda chose: ${computerChoice}.`;
     let scoreColumns = document.getElementsByClassName("scores");
-    scoreColumns[0].textContent = `Your Wins: ${userScore}`;
-    scoreColumns[1].textContent = `Computer Wins: ${computerScore}`;
+    scoreColumns[0].textContent = `Mario's attacked: ${userScore} times!`;
+    scoreColumns[1].textContent = `Handaconda's attacked: ${computerScore} times!`;
   }
 }
