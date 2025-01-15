@@ -92,3 +92,5 @@ function playGame() {
     scoreColumns[1].textContent = `Handaconda's attacked: ${computerScore} times!`;
   }
 }
+
+//find way to make gane end after 5 rounds or 3 wins form either side. when that happens add replay button instead of contionue button. if mario ooses mke him fiant if handaconda faint make him explode into confetti
