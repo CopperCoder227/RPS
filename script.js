@@ -32,8 +32,14 @@ function scissorsSelect() {
 
 //code to make game run//
 
+let userScore = 0;
+let computerScore = 0;
   
-  
+
+
+
+
+
   const getComputerChoice = () => {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
@@ -87,8 +93,12 @@ function scissorsSelect() {
       console.log(determineWinner(userChoice, computerChoice));
       document.getElementById("centerText").classList.add("d-none");
       let columns = document.querySelectorAll("#result .row .col-4");
+      let col12 = document.getElementById("col12");
       columns[0].textContent = `Mario chose: ${userChoice}.`;
-      columns[1].textContent = determineWinner(userChoice, computerChoice);
+      col12.textContent = `${determineWinner(userChoice, computerChoice)}`;
       columns[2].textContent = `Handaconda chose: ${computerChoice}.`;
+      let scoreColumns = document.getElementsByClassName("scores");
+      scoreColumns[0].textContent = `Your Wins: ${userScore}`;
+      scoreColumns[1].textContent = `Computer Wins: ${computerScore}`;
     }
   };
