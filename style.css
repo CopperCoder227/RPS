@@ -44,9 +44,14 @@ text-shadow: 2px 2px 5px #000000;
   width: 300px;  
 }
 
-.chart{
+.1chart{
   height: 300px;
   width: 300px;  
+}
+
+#chart{
+  height: 250px;
+  width: 400px;  
 }
 
 .selectedRock {
