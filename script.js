@@ -98,7 +98,9 @@ function playGame() {
       scoreColumns[0].textContent = `Mario's attacked: ${userScore} times!`;
       scoreColumns[1].textContent = `Handaconda's attacked: ${computerScore} times!`;
     }
-  } else {
+  } 
+  //something is wrong with the else statement!
+  else {
     (counter >= 5) {
       let url = `imgs/Vs/${fLetter}v${lLetter}.png`;
   document.getElementById("btn").src = url;
@@ -106,8 +108,8 @@ function playGame() {
   }
 }
 
-//find way to make gane end after 5 rounds or 3 wins form either side. 
-// when that happens add replay button instead of contionue button. 
-// if mario ooses mke him fiant if handaconda faint make him explode into confetti 
+//find way to make gane end after 5 rounds or 3 wins form either side.
+// when that happens add replay button instead of contionue button.
+// if mario ooses mke him fiant if handaconda faint make him explode into confetti
 
 // fix xhart in css by adding or removing it 1chart / 2chart so that the base chart is different from the Vs img - ak rem
