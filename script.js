@@ -98,18 +98,23 @@ function playGame() {
       scoreColumns[0].textContent = `Mario's attacked: ${userScore} times!`;
       scoreColumns[1].textContent = `Handaconda's attacked: ${computerScore} times!`;
     }
-  } 
-  //something is wrong with the else statement!
-  else {
-    (counter >= 5) {
-      let url = `imgs/Vs/${fLetter}v${lLetter}.png`;
-  document.getElementById("btn").src = url;
-    }
+  } else if (counter == 5) {
+    setTimeout(() => {
+      alert("Computer won the game. Better luck next time!");
+      resetGame();
+    }, 500); // Delay to show lose message
+  } else if (userScore == 5) {
+    setTimeout(() => {
+      alert("You won the game! Congratulations!");
+      resetGame();
+    }, 500); // Delay to show win message
+  } else if (computerScore == 5) {
+    setTimeout(() => {
+      alert("Computer won the game. Better luck next time!");
+      resetGame();
+    }, 500); // Delay to show lose message
   }
 }
 
-//find way to make gane end after 5 rounds or 3 wins form either side.
 // when that happens add replay button instead of contionue button.
 // if mario ooses mke him fiant if handaconda faint make him explode into confetti
-
-// fix xhart in css by adding or removing it 1chart / 2chart so that the base chart is different from the Vs img - ak rem
