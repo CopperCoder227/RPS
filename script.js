@@ -30,6 +30,8 @@ function scissorsSelect() {
   userChoice = "scissors";
 }
 
+console.log(userName); // Log userName first
+
 //code to make game run//
 
 let [computerScore, userScore] = [0, 0];
@@ -104,20 +106,17 @@ function playGame() {
     }, 500); // Delay to show lose message
   } else if (userScore > computerScore) {
     setTimeout(() => {
-      col12.textContent = `Congratulations! You beat Handacoda!`;
+      col12.textContent = `Congratulations! ${userName} beat Handacoda!`;
       document.getElementById("hand").src = "imgs/confetti.png";
-      resetGame();
     }, 500); // Delay to show win message
   } else if (computerScore > userScore) {
     setTimeout(() => {
       col12.textContent = `Oh no! Handaconda Won! Try again!`;
       document.getElementById("mario").src = "imgs/Mario-Faint.png";
-      resetGame();
     }, 500); // Delay to show lose message
   } else if (userScore == computerScore) {
     setTimeout(() => {
       col12.textContent = `It's a draw! Try again!`;
-      resetGame();
     }, 500); // Delay to show lose message
   }
 }
