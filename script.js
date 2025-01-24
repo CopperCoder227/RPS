@@ -102,19 +102,19 @@ function playGame() {
     setTimeout(() => {
       resetGame();
     }, 500); // Delay to show lose message
-  } else if (userScore == 3) {
+  } else if (userScore > computerScore) {
     setTimeout(() => {
       col12.textContent = `You Won!`;
       document.getElementById("hand").src = "imgs/confetti.png";
       resetGame();
     }, 500); // Delay to show win message
-  } else if (computerScore == 3) {
+  } else if (computerScore > userScore) {
     setTimeout(() => {
       col12.textContent = `Handaconda Won!`;
       document.getElementById("mario").src = "imgs/Mario-Faint.png";
       resetGame();
     }, 500); // Delay to show lose message
-  } else if (userScore <= 3 && computerScore <= 3) {
+  } else if (userScore == computerScore) {
     setTimeout(() => {
       col12.textContent = `Draw Won!`;
       resetGame();
