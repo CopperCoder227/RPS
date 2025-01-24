@@ -104,22 +104,23 @@ function playGame() {
     }, 500); // Delay to show lose message
   } else if (userScore > computerScore) {
     setTimeout(() => {
-      col12.textContent = `You Won!`;
+      col12.textContent = `Congratulations! You beat Handacoda!`;
       document.getElementById("hand").src = "imgs/confetti.png";
       resetGame();
     }, 500); // Delay to show win message
   } else if (computerScore > userScore) {
     setTimeout(() => {
-      col12.textContent = `Handaconda Won!`;
+      col12.textContent = `Oh no! Handaconda Won! Try again!`;
       document.getElementById("mario").src = "imgs/Mario-Faint.png";
       resetGame();
     }, 500); // Delay to show lose message
   } else if (userScore == computerScore) {
     setTimeout(() => {
-      col12.textContent = `Draw Won!`;
+      col12.textContent = `It's a draw! Try again!`;
       resetGame();
     }, 500); // Delay to show lose message
   }
 }
 
 // when that happens add replay button instead of contionue button.
+//find out if i can remove the name thing after the first card is chosen
