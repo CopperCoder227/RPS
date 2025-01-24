@@ -100,21 +100,26 @@ function playGame() {
     }
   } else if (counter == 5) {
     setTimeout(() => {
-      alert("Computer won the game. Better luck next time!");
       resetGame();
     }, 500); // Delay to show lose message
-  } else if (userScore == 5) {
+  } else if (userScore == 3) {
     setTimeout(() => {
-      alert("You won the game! Congratulations!");
+      col12.textContent = `You Won!`;
+      document.getElementById("hand").src = "imgs/confetti.png";
       resetGame();
     }, 500); // Delay to show win message
-  } else if (computerScore == 5) {
+  } else if (computerScore == 3) {
     setTimeout(() => {
-      alert("Computer won the game. Better luck next time!");
+      col12.textContent = `Handaconda Won!`;
+      document.getElementById("mario").src = "imgs/Mario-Faint.png";
+      resetGame();
+    }, 500); // Delay to show lose message
+  } else if (userScore <= 3 && computerScore <= 3) {
+    setTimeout(() => {
+      col12.textContent = `Draw Won!`;
       resetGame();
     }, 500); // Delay to show lose message
   }
 }
 
 // when that happens add replay button instead of contionue button.
-// if mario ooses mke him fiant if handaconda faint make him explode into confetti
