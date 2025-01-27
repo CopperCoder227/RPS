@@ -30,7 +30,12 @@ function scissorsSelect() {
   userChoice = "scissors";
 }
 
-console.log(userName); // Log userName first
+let userName = submitForm();
+
+function submitForm() {
+  const userName = document.getElementById("fname").value;
+  console.log(userName);
+}
 
 //code to make game run//
 
