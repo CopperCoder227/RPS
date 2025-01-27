@@ -30,11 +30,12 @@ function scissorsSelect() {
   userChoice = "scissors";
 }
 
-let userName = submitForm();
+let userName = "";
 
 function submitForm() {
-  const userName = document.getElementById("fname").value;
+  userName = document.getElementById("fname").value;
   console.log(userName);
+  return userName;
 }
 
 //code to make game run//
@@ -112,6 +113,7 @@ function playGame() {
   } else if (userScore > computerScore) {
     setTimeout(() => {
       col12.textContent = `Congratulations! ${userName} beat Handacoda!`;
+      console.log(`Congratulations! ${userName} beat Handacoda!`);
       document.getElementById("hand").src = "imgs/confetti.png";
     }, 500); // Delay to show win message
   } else if (computerScore > userScore) {
